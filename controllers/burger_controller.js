@@ -11,8 +11,25 @@ const router = express.Router();
 router.get("/", function(req, res) {
   burger.getBurgers(function(data){
     // Data is a json object { burgers: [array of data]}
+
+    // Make two arrays for fresh and eaten burgers
+    let freshBurgers = [];
+    let eatenBurgers = [];
+
+    for (let i = 0; i < data.length; i++) {
+      switch (data[i].devoured) {
+        case (0):
+          freshBurgers.push(data[i]);
+          break;
+        case (1):
+          freshBurgers.push(data[i]);
+          break;
+      }
+    }
+
     let hbsObject = {
-      burgers: data
+      freshBurgers: freshBurgers,
+      eatenBurgers: eatenBurgers
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
