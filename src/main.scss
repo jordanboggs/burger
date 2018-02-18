@@ -1,5 +1,5 @@
-@import "../node_modules/material-components-web/material-components-web";
+$mdc-theme-primary: #FF9800;
+$mdc-theme-secondary: #00E5FF;
+$mdc-theme-background: #efefef;
 
-body {
-  font-size: 16px;
-}
+@import "../node_modules/material-components-web/material-components-web";
