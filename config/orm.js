@@ -15,7 +15,7 @@ const orm = {
 
   // insertOne()
   insertOne: function(name, cb) {
-    const query = "INSERT INTO burgers (burger_name) VALUES ?";
+    const query = "INSERT INTO burgers (burger_name) VALUES (?)";
     connection.query(query, name, function(err, result) {
       if (err) console.log(err);
       cb(result);
