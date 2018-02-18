@@ -14,4 +14,19 @@ $(document).on('ready', function(){
       location.reload();
     });
   });
+
+  $(document).on("click", ".devour-button", function(event) {
+    const id = $(this).data("id");
+    const devouredBurger = {
+      "id": id
+    };
+    
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: devouredBurger
+    }).then(function() {
+      // Reload page to show new data
+      location.reload();
+    });
+  });
 });

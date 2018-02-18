@@ -14,20 +14,20 @@ router.get("/", function(req, res) {
     let hbsObject = {
       burgers: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
 router.post("/api/burgers", function(req, res) {
-  console.log("req.body",req.body);
   burger.addBurger(req.body.name, function(result) {
     res.json({ "name": result });
   });
 });
 
 router.put("/api/burgers/:id", function(req, res) {
-
+  burger.devourBurger(req.params.id, function(result) {
+    res.json({ "id": result });
+  });
 });
 
 module.exports = router;
