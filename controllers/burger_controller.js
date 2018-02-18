@@ -13,23 +13,22 @@ router.get("/", function(req, res) {
     // Data is a json object { burgers: [array of data]}
 
     // Make two arrays for fresh and eaten burgers
-    let freshBurgers = [];
-    let eatenBurgers = [];
+    // let freshBurgers = [];
+    // let eatenBurgers = [];
 
-    for (let i = 0; i < data.length; i++) {
-      switch (data[i].devoured) {
-        case (0):
-          freshBurgers.push(data[i]);
-          break;
-        case (1):
-          freshBurgers.push(data[i]);
-          break;
-      }
-    }
+    // for (let i = 0; i < data.length; i++) {
+    //   switch (data[i].devoured) {
+    //     case (0):
+    //       freshBurgers.push(data[i]);
+    //       break;
+    //     case (1):
+    //       freshBurgers.push(data[i]);
+    //       break;
+    //   }
+    // }
 
     let hbsObject = {
-      freshBurgers: freshBurgers,
-      eatenBurgers: eatenBurgers
+      burgers: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
