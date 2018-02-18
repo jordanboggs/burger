@@ -3,3 +3,5 @@ $mdc-theme-secondary: #00E5FF;
 $mdc-theme-background: #efefef;
 
 @import "../node_modules/material-components-web/material-components-web";
+@import 'typography';
+@import 'layout';
