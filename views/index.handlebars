@@ -1,4 +1,5 @@
 <div id="burgers-to-eat" class="burger-list">
+  <h2 class="mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Yum yum eat 'em up!</h2>
   {{#each burgers}}
     {{#unless devoured}}
       <div class="burger-item">{{id}}. {{burger_name}} <button class="devour-button" data-id="{{id}}">Yum!</button></div>
@@ -6,6 +7,7 @@
   {{/each}}
 </div>
 <div id="devoured-burgers" class="burger-list">
+  <h2 class="mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Yum yum those were good!</h2>
   {{#each burgers}}
     {{#if devoured}}
       <div class="burger-item">{{id}}. {{burger_name}}</div>

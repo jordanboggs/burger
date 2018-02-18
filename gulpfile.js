@@ -12,7 +12,7 @@ gulp.task('sass', () =>
 
 gulp.task('sass:watch', () =>
   watchSass(
-    ['./src/*.scss'],
+    ['./src/*/*.scss'],
     {includePaths: ['./node_modules/']})
   .pipe(sass({
     includePaths: ['./node_modules']
