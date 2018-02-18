@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Burgers Yum!</title>
+  <script src="https://code.jquery.com/jquery.js" defer></script>
+  <script src="burgerPage.js" defer></script>
 </head>
 <body>
 <header>
@@ -12,6 +14,13 @@
 </header>
 <main>
   {{{ body }}}
+  <div class="burger-submission">
+    <form class="burger-form">
+      <label for="burger-name">Burger name:</label>
+      <input type="text" name="burger-name" id="burger-name">
+      <button type="submit" class="form-submit"></button>
+    </form>
+  </div>
 </main>
 <footer>
   <a href = "https://github.com/preaksneview/burger" target="_blank">GitHub Link</a>
