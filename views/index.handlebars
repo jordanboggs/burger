@@ -1,7 +1,7 @@
 <div id="burgers-to-eat" class="burger-list">
   {{#each burgers}}
     {{#unless devoured}}
-      <div class="burger-item">{{id}}. {{burger_name}} <button class="devour-button">Yum!</button></div>
+      <div class="burger-item">{{id}}. {{burger_name}} <button class="devour-button" data-id="{{id}}">Yum!</button></div>
     {{/unless}}
   {{/each}}
 </div>

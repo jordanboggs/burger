@@ -11,40 +11,23 @@ const router = express.Router();
 router.get("/", function(req, res) {
   burger.getBurgers(function(data){
     // Data is a json object { burgers: [array of data]}
-
-    // Make two arrays for fresh and eaten burgers
-    // let freshBurgers = [];
-    // let eatenBurgers = [];
-
-    // for (let i = 0; i < data.length; i++) {
-    //   switch (data[i].devoured) {
-    //     case (0):
-    //       freshBurgers.push(data[i]);
-    //       break;
-    //     case (1):
-    //       freshBurgers.push(data[i]);
-    //       break;
-    //   }
-    // }
-
     let hbsObject = {
       burgers: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
 router.post("/api/burgers", function(req, res) {
-  
+  burger.addBurger(req.body.name, function(result) {
+    res.json({ "name": result });
+  });
 });
 
 router.put("/api/burgers/:id", function(req, res) {
-
-});
-
-router.delete("/api/burgers/:id", function(req, res) {
-
+  burger.devourBurger(req.params.id, function(result) {
+    res.json({ "id": result });
+  });
 });
 
 module.exports = router;
