@@ -1,3 +1,7 @@
+/* 
+ * The controller puts CRUD functions into action 
+ */
+
 const express = require('express');
 // Import the model to get its database functions
 const burger = require('../models/burger.js');
