@@ -8941,6 +8941,7 @@ body {
   min-height: 100vh; }
 
 header {
+  margin-bottom: 1rem;
   text-align: center;
   width: 100%; }
 
@@ -8950,6 +8951,7 @@ header {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  padding: 1rem;
   width: 100%; }
 
 .row {
@@ -8975,7 +8977,7 @@ footer {
   min-width: 40%;
   padding: 0; }
   .burger-list h2 {
-    margin: 0 0 0 -1px;
+    margin: -1px 0 0 -1px;
     padding: .5em;
     text-align: center;
     width: calc(100% + 2px); }
@@ -9003,7 +9005,7 @@ footer {
   min-width: 40%;
   padding: 0 0 0.5em 0; }
   .burger-submission h2 {
-    margin: 0 0 1em -1px;
+    margin: 0 0 0 -1px;
     padding: .5em;
     text-align: center;
     width: calc(100% + 2px); }
