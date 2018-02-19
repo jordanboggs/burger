@@ -2,7 +2,10 @@
   <h2 class="mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Yum yum eat 'em up!</h2>
   {{#each burgers}}
     {{#unless devoured}}
-      <div class="burger-item">{{id}}. {{burger_name}} <button class="burger-item__button mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-secondary" data-id="{{id}}">Yum!</button></div>
+      <div class="burger-item">
+        <p>{{id}}. {{burger_name}}</p>
+        <button class="burger-item__button mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-secondary" data-id="{{id}}">Yum! Feed me!</button>
+      </div>
     {{/unless}}
   {{/each}}
 </div>
