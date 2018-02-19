@@ -7,23 +7,17 @@
   <title>Burgers Yum!</title>
   <script src="https://code.jquery.com/jquery.js" defer></script>
   <script src="burgerPage.js" defer></script>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<header>
-  <h1>Burgers, Yum!</h1>
-</header>
-<main>
-  {{{ body }}}
-  <div class="burger-submission">
-    <form class="burger-form">
-      <label for="burger-name">Burger name:</label>
-      <input type="text" name="burger-name" id="burger-name">
-      <button type="submit" class="form-submit">Submit burger</button>
-    </form>
-  </div>
-</main>
-<footer>
-  <a href = "https://github.com/preaksneview/burger" target="_blank">GitHub Link</a>
-</footer>
+  <header class="mdc-theme--primary-bg">
+    <h1 class="mdc-theme--text-primary-on-primary">Burgers, Yum!</h1>
+  </header>
+  <main class="container">
+    {{{ body }}}
+  </main>
+  <footer class="mdc-theme--primary-dark-bg">
+    <a class="mdc-theme--text-secondary-on-dark" href = "https://github.com/preaksneview/burger" target="_blank">GitHub Link</a>
+  </footer>
 </body>
 </html>
