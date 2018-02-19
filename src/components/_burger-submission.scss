@@ -15,3 +15,21 @@
     width: calc(100% + 2px);
   }
 }
+
+.burger-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: .5rem;
+  min-height: 3rem;
+  width: calc(100% - 1rem);
+
+  p {
+    align-self: center;
+    margin: 0 0 0 1em;
+  }
+  
+  .form-submit {
+    margin-left: 0.5rem;
+  }
+}

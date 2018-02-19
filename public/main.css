@@ -8960,7 +8960,10 @@ header {
   width: 100%; }
 
 footer {
+  padding: .5rem;
   width: 100%; }
+  footer a {
+    text-decoration: none; }
 
 .burger-list {
   align-items: center;
@@ -9004,3 +9007,16 @@ footer {
     padding: .5em;
     text-align: center;
     width: calc(100% + 2px); }
+
+.burger-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: .5rem;
+  min-height: 3rem;
+  width: calc(100% - 1rem); }
+  .burger-form p {
+    align-self: center;
+    margin: 0 0 0 1em; }
+  .burger-form .form-submit {
+    margin-left: 0.5rem; }

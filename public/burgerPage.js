@@ -29,4 +29,12 @@ $(document).on('ready', function(){
       location.reload();
     });
   });
+
+  $("#github-link").hover(function() {
+    $(this).addClass('mdc-theme--text-primary-on-dark');
+    $(this).removeClass('mdc-theme--text-secondary-on-dark');
+  }, function() {
+    $(this).removeClass('mdc-theme--text-primary-on-dark');
+    $(this).addClass('mdc-theme--text-secondary-on-dark');
+  });
 });
