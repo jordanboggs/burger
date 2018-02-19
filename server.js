@@ -5,8 +5,8 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 
 // Sets up the Express App
-var app = express();
-var PORT = process.env.PORT || 3000;
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
