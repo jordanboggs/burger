@@ -15,7 +15,7 @@ $(document).on('ready', function(){
     });
   });
 
-  $(document).on("click", "burger-item__button", function(event) {
+  $(document).on("click", ".burger-item__button", function(event) {
     const id = $(this).data("id");
     const devouredBurger = {
       "id": id

@@ -8989,3 +8989,18 @@ footer {
     margin: 0; }
   .burger-item button {
     align-self: center; }
+
+.burger-submission {
+  align-items: center;
+  border: 1px solid #FF9800;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 2rem;
+  min-width: 40%;
+  padding: 0 0 0.5em 0; }
+  .burger-submission h2 {
+    margin: 0 0 1em -1px;
+    padding: .5em;
+    text-align: center;
+    width: calc(100% + 2px); }

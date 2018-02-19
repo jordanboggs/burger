@@ -1,21 +1,35 @@
-<div id="burgers-to-eat" class="burger-list">
-  <h2 class="mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Yum yum eat 'em up!</h2>
-  {{#each burgers}}
-    {{#unless devoured}}
-      <div class="burger-item">
-        <p>{{id}}. {{burger_name}}</p>
-        <button class="burger-item__button mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-secondary" data-id="{{id}}">Yum! Feed me!</button>
+<article class="row">
+  <div id="burgers-to-eat" class="burger-list">
+    <h2 class="mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Yum yum eat 'em up!</h2>
+    {{#each burgers}}
+      {{#unless devoured}}
+        <div class="burger-item">
+          <p>{{id}}. {{burger_name}}</p>
+          <button class="burger-item__button mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-secondary" data-id="{{id}}">Yum! Feed me!</button>
+        </div>
+      {{/unless}}
+    {{/each}}
+  </div>
+  <div id="devoured-burgers" class="burger-list">
+    <h2 class="mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Yum yum those were good!</h2>
+    {{#each burgers}}
+      {{#if devoured}}
+        <div class="burger-item">
+          <p>{{id}}. {{burger_name}}</p>
+        </div>
+      {{/if}}
+    {{/each}}
+  </div>
+</article>
+<aside class="row">
+  <div class="burger-submission">
+    <h2 class="mdc-theme--primary-light-bg mdc-theme--text-primary-on-light">C'mon and add a burg!</h2>
+    <form>
+      <div class="burger-form mdc-text-field">
+        <label for="burger-name">Burger name:</label>
+        <input class="mdc-text-field__input" type="text" name="burger-name" id="burger-name">
       </div>
-    {{/unless}}
-  {{/each}}
-</div>
-<div id="devoured-burgers" class="burger-list">
-  <h2 class="mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Yum yum those were good!</h2>
-  {{#each burgers}}
-    {{#if devoured}}
-      <div class="burger-item">
-        <p>{{id}}. {{burger_name}}</p>
-      </div>
-    {{/if}}
-  {{/each}}
-</div>
+      <button type="submit" class="form-submit burger-item__button mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-secondary">Submit burger</button>
+    </form>
+  </div>
+</aside>
