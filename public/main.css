@@ -8961,3 +8961,17 @@ header {
 
 footer {
   width: 100%; }
+
+.burger-list {
+  align-items: flex-start;
+  border: 1px solid #FF9800;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0; }
+  .burger-list h2 {
+    margin: -1px -1px .5em;
+    padding: .5em; }
+
+.burger-item {
+  margin: 0 0 1em 1em; }
