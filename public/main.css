@@ -8991,7 +8991,8 @@ footer {
   width: calc(100% - 1rem); }
   .burger-item p {
     align-self: center;
-    margin: 0; }
+    margin: 0;
+    min-width: 22em; }
   .burger-item button {
     align-self: center; }
 
