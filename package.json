@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-dest": "^0.2.3",
     "gulp-sass": "^3.1.0",
     "gulp-watch-sass": "^1.4.0",
     "material-components-web": "^0.30.0",
