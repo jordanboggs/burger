@@ -1,5 +1,8 @@
 @import 'variables';
-@import "../node_modules/material-components-web/material-components-web";
+// @import "../node_modules/material-components-web/material-components-web";
+@import '../node_modules/@material/theme/mdc-theme';
+@import '../node_modules/@material/button/mdc-button.scss';
+@import '../node_modules/@material/textfield/mdc-text-field';
 @import 'base/typography';
 @import 'base/layout'; 
 @import 'components/burger-list';
