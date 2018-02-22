@@ -3,10 +3,14 @@ const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 const path = require('path');
 const exphbs = require('express-handlebars');
+const compression = require('compression');
 
 // Sets up the Express App
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Compression
+app.use(compression());
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
